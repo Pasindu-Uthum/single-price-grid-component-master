@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: #e5eff5;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 50%;
+  height: 60vh;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.container .full-size-div {
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.container .full-size-div h1 {
+  color: #2ab2af;
+}
+
+.container .full-size-div h2 {
+  color: #c0df34;
+  padding: 10px 0;
+}
+
+.container .full-size-div p {
+  color: #98a6bd;
+  font-weight: bold;
+}
+
+.container .subscription {
+  width: 50%;
+  height: 60%;
+  background-color: #2ab2af;
+  color: white;
+  padding: 40px;
+  float: left;
+}
+
+.container .subscription .price {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .subscription .price span {
+  font-weight: bolder;
+  font-size: 2rem;
+  padding-right: 10px;
+}
+
+.container .subscription p {
+  font-size: 1.1rem;
+  padding-bottom: 15px;
+}
+
+.container .subscription button {
+  display: block;
+  padding: 10px 20px;
+  width: 100%;
+  color: white;
+  background-color: #c0df34;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px #145c5b;
+          box-shadow: 0px 0px 10px #145c5b;
+  cursor: pointer;
+}
+
+.container .subscription button:hover {
+  background-color: #4a5615;
+}
+
+.container .why-us-container {
+  width: 50%;
+  height: 60%;
+  float: left;
+  background-color: #2bbfbd;
+  color: white;
+  padding: 40px;
+}
+
+.container .why-us-container h3 {
+  padding-bottom: 10px;
+}
+
+.container .why-us-container p {
+  font-size: 1rem;
+  padding: 2px 0;
+}
+
+@media screen and (max-width: 1133px) {
+  .container {
+    height: 80vh;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 721px) {
+  .container .why-us-container,
+  .container .subscription {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 529px) {
+  body {
+    height: auto;
+    padding: 50px 0;
+  }
+  .container {
+    height: auto;
+  }
+  .container .why-us-container,
+  .container .subscription {
+    width: 100%;
+    float: unset;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .container {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

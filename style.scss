@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  height: 60vh;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  .full-size-div {
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    padding: 10px 20px;
+    h1 {
+      color: hsl(179, 62%, 43%);
+    }
+    h2 {
+      color: hsl(71, 73%, 54%);
+      padding: 10px 0;
+    }
+    p {
+      color: hsl(218, 22%, 67%);
+      font-weight: bold;
+    }
+  }
+  .subscription {
+    width: 50%;
+    height: 60%;
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding: 40px;
+    float: left;
+    .price {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      span {
+        font-weight: bolder;
+        font-size: 2rem;
+        padding-right: 10px;
+      }
+    }
+    p {
+      font-size: 1.1rem;
+      padding-bottom: 15px;
+    }
+    button {
+      display: block;
+      padding: 10px 20px;
+      width: 100%;
+      color: white;
+      background-color: hsl(71, 73%, 54%);
+      border: none;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px hsl(179, 64%, 22%);
+      cursor: pointer;
+      &:hover {
+        background-color: hsl(71, 60%, 21%);
+      }
+    }
+  }
+  .why-us-container {
+    width: 50%;
+    height: 60%;
+    float: left;
+    background-color: hsl(179, 63%, 46%);
+    color: white;
+    padding: 40px;
+    h3 {
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      padding: 2px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1133px) {
+  .container {
+    height: 80vh;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 721px) {
+  .container {
+    .why-us-container,
+    .subscription {
+      padding: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 529px) {
+  body {
+    height: auto;
+    padding: 50px 0;
+  }
+  .container {
+    height: auto;
+    .why-us-container,
+    .subscription {
+      width: 100%;
+      float: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .container {
+    width: 90%;
+  }
+}
